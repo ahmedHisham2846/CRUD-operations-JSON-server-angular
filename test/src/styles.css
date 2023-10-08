@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: Poppins;
+}
+
+.btn-main {
+  border-radius: 12px;
+  background-color: #d89988 !important;
+  color: #fff !important;
+}
+
+.btn-main:hover {
+  background-color: #bb735f !important;
+}
+
+.btn-main:active {
+  background-color: #b48679 !important;
+}
+
+.title-colored,
+.title {
+  color: #020202;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.title-colored {
+  color: #b48679;
+}

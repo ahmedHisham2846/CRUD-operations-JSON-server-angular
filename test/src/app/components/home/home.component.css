@@ -1,0 +1,39 @@
+.landing .landing-title {
+  color: #020202;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.discount .title + div,
+.landing .landing-title + div {
+  color: #656565;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.discount .discount-price {
+  color: #656565;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.discount .discount-price span {
+  color: #d89988;
+}
+
+.discount .discount-time {
+  border-radius: 15px;
+  background: #eee;
+}
+
+.discount .discount-time > div:first-child {
+  color: #d89988;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.discount .discount-time > div:last-child {
+    color: #999798;
+    font-size: 18px;
+    font-weight: 400;
+}

@@ -1,0 +1,84 @@
+<div class="container my-5">
+  <h1 class="mb-4">{{ productId == 0 ? "Add Product" : "Edit Product" }}</h1>
+  <form [formGroup]="productForm" class="row" (submit)="formOperation($event)">
+    <ng-container *ngIf="productId == 0">
+      <div class="mb-3 col-12 col-md-9">
+        <input
+          type="text"
+          class="form-control"
+          aria-describedby="emailHelp"
+          placeholder="Enter Product Name"
+          id="productName"
+          name="productName"
+          formControlName="productName"
+        />
+        <!-- <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div> -->
+      </div>
+      <div class="mb-3 col-12 col-md-9">
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Enter Product Price"
+          id="price"
+          name="price"
+          formControlName="price"
+        />
+      </div>
+      <div class="mb-3 col-12 col-md-9">
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Enter Product Quantity"
+          id="quantity"
+          name="quantity"
+          formControlName="quantity"
+        />
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="productId > 0">
+      <div class="mb-3 col-12 col-md-9">
+        <input
+          type="text"
+          class="form-control"
+          aria-describedby="emailHelp"
+          placeholder="Enter Product Name"
+          id="productName"
+          name="productName"
+          formControlName="productName"
+        />
+        <!-- <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div> -->
+      </div>
+      <div class="mb-3 col-12 col-md-9">
+        <input
+          type="number"
+          placeholder="Enter Product Price"
+          class="form-control"
+          id="price"
+          name="price"
+          formControlName="price"
+        />
+      </div>
+      <div class="mb-3 col-12 col-md-9">
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Enter Product Quantity"
+          id="quantity"
+          name="quantity"
+          formControlName="quantity"
+        />
+      </div>
+    </ng-container>
+
+    <div class="col-4">
+      <button type="submit" class="btn btn-success">
+        {{ productId == 0 ? "Add Product" : "Edit Product" }}
+      </button>
+    </div>
+  </form>
+</div>

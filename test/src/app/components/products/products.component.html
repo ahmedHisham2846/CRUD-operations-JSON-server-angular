@@ -1,0 +1,35 @@
+<div class="container py-5 my-5">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">product Name</th>
+        <th scope="col">product Price</th>
+        <th scope="col">product Quantity</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <th scope="row">{{ product.id }}</th>
+        <td>{{ product.productName }}</td>
+        <td>{{ product.price | currency }}</td>
+        <td>{{ product.quantity }}</td>
+        <td>
+          <i
+            [routerLink]="['/products', product.id, 'edit']"
+            class="mx-1 fs-2 text-info bi bi-pencil-square"
+          ></i>
+          <i
+            [routerLink]="['/products', product.id, 'details']"
+            class="mx-1 fs-2 text-warning bi bi-eye-fill"
+          ></i>
+          <i
+            (click)="deleteProduct(product.id)"
+            class="mx-1 fs-2 text-danger bi bi-trash"
+          ></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

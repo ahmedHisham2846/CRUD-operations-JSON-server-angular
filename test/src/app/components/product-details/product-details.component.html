@@ -1,0 +1,19 @@
+<div class="bg-dark my-5 py-5">
+  <div class="container">
+    <div class="row text-center text-light">
+      <h1 class="col-12 mb-4">Product Details: {{ productId }}</h1>
+      <div class="col-12 fs-3">Product Name: {{ product.productName }}</div>
+      <div class="col-12 fs-3 my-4">
+        Product Price: {{ product.price | currency }}
+      </div>
+      <div class="col-12 fs-3 mb-4">
+        Product Quantity: {{ product.quantity }}
+      </div>
+      <div class="col-12">
+        <button [routerLink]="['/products']" class="btn btn-outline-primary">
+          Back To Products
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

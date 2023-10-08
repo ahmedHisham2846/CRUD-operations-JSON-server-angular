@@ -1,0 +1,31 @@
+<div class="login py-5">
+  <div class="container">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="px-4 my-5 rounded login-card border">
+        <div class="title-colored mb-4 mt-3">Login Now</div>
+        <form [formGroup]="loginForm">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter Username"
+            class="form-control my-4"
+            formControlName="username"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter Password"
+            class="form-control my-4"
+            formControlName="password"
+          />
+
+          <div class="my-4">
+            <button (click)="login()" class="btn btn-main">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
