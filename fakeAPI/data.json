@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "price": 300,
+      "productName": "Book",
+      "quantity": 100
+    },
+    {
+      "id": 2,
+      "price": 500,
+      "productName": "Watch",
+      "quantity": 70
+    },
+    {
+      "id": 3,
+      "price": 20,
+      "productName": "Pen",
+      "quantity": 550
+    },
+    {
+      "id": 4,
+      "price": 200,
+      "productName": "Frutes",
+      "quantity": 124
+    }
+  ]
+}
